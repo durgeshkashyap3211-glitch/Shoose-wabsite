@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shoe Search</h1>
+        <input type="text" id="search-bar" placeholder="Search for shoes...">
+    </header>
+    
+    <nav>
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="men">Men</button>
+        <button class="category-btn" data-category="women">Women</button>
+        <button class="category-btn" data-category="kids">Kids</button>
+    </nav>
+    
+    <aside id="filters">
+        <h3>Filters</h3>
+        <div>
+            <label>Price:</label>
+            <select id="price-filter">
+                <option value="all">All</option>
+                <option value="0-50">$0 - $50</option>
+                <option value="51-100">$51 - $100</option>
+                <option value="101-200">$101 - $200</option>
+                <option value="201+">$201+</option>
+            </select>
+        </div>
+        <div>
+            <label>Brand:</label>
+            <select id="brand-filter">
+                <option value="all">All</option>
+                <option value="Nike">Nike</option>
+                <option value="Adidas">Adidas</option>
+                <option value="Puma">Puma</option>
+                <option value="Reebok">Reebok</option>
+            </select>
+        </div>
+        <div>
+            <label>Type:</label>
+            <select id="type-filter">
+                <option value="all">All</option>
+                <option value="sneakers">Sneakers</option>
+                <option value="boots">Boots</option>
+                <option value="sandals">Sandals</option>
+                <option value="heels">Heels</option>
+            </select>
+        </div>
+    </aside>
+    
+    <main id="products">
+        <!-- Products will be dynamically inserted here -->
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
